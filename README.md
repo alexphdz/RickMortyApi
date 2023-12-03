@@ -4,6 +4,7 @@
 
 - [.NET 7.0](https://dotnet.microsoft.com/download/dotnet/7.0)
 - [SQL Server](https://www.microsoft.com/sql-server) (puedes usar una instancia local o en Docker)
+- [MYSQL] para el caso de docker ya se encuentra configurado.
 
 ## Configuración
 
