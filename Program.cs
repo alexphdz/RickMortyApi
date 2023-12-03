@@ -21,6 +21,19 @@ builder.Services.AddDbContext<RickMortyDbContext>(options =>
 });
 #endregion
 
+#region Cors
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy", builder =>
+    {
+        builder.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowAnyHeader();
+    });
+});
+#endregion
+
 var app = builder.Build();
 
 
@@ -34,6 +47,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseCors("CorsPolicy");
 
 app.MapControllers();
 

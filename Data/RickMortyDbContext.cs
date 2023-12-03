@@ -14,10 +14,13 @@ public class RickMortyDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
         
-        modelBuilder.Entity<Character>()
-            .Property(c => c.id);
+        modelBuilder.Entity<Episode>()
+            .HasKey(e => e.Id);
 
-        // modelBuilder.Entity<Episode>()
-        // .HasKey(e => e.Id);
+        modelBuilder.Entity<Character>()
+            .HasMany(c => c.Episodes)
+            .WithOne(e => e.Character)
+            .HasForeignKey(e => e.CharacterId);
+
     }
 }

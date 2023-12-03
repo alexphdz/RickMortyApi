@@ -74,3 +74,4 @@
 /Users/alpalacios/Desktop/pt/back/RickAndMortyApi/obj/Debug/net7.0/RickAndMortyApi.pdb
 /Users/alpalacios/Desktop/pt/back/RickAndMortyApi/obj/Debug/net7.0/RickAndMortyApi.genruntimeconfig.cache
 /Users/alpalacios/Desktop/pt/back/RickAndMortyApi/obj/Debug/net7.0/ref/RickAndMortyApi.dll
+/Users/alpalacios/Desktop/pt/back/RickAndMortyApi/bin/Debug/net7.0/Newtonsoft.Json.dll
