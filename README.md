@@ -48,8 +48,24 @@
     ```bash
     dotnet run
     ```
+## Ejecución con Docker 
 
-La aplicación estará disponible en [https://localhost:5001](https://localhost:5001).
+1. Configura la cadena de conexión en `appsettings.json`:
+
+    ```json
+    {
+      "ConnectionStrings": {
+        "RickMortyDbContext": "Server=sql-server,1433;Database=RickMortyDB;User=SA;Password=MiPassword123!;"
+      }
+    }
+    ```
+2. Ejecuta la aplicación:
+
+    ```bash
+    docker-compose up --build 
+    ```
+
+La aplicación estará disponible en [https://localhost:5001](https://localhost:5001) o 8080 con Docker.
 
 
 

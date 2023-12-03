@@ -32,7 +32,7 @@ public class CharacterController : ControllerBase
         return new RequestResponse {
             Data = response.Data,
             Estado = EstadoRespuesta.OK,
-            Mensaje = "Se agregaron los personajs de la locación indicada."
+            Mensaje = "Personajes obtenidos correctamente."
         }; 
     }
 }

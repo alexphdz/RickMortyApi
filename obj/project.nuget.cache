@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KsqZA6nsjhP0rNodT5wtQKxQTsB61poYMY8QoYfw+gnZOcGuPh2ZLJmiVs7n9DWaiHGvRInPo9Q+lN3TIfI8cw==",
+  "dgSpecHash": "u8eYH3AE9xOi0LPbEr2rvQYw+6hll6Re6wBDJ4Sp8otmPgDP7+QgTm7GW8bJ0wz/UdNX8GZQjgJWQ42XHQ8EtA==",
   "success": true,
-  "projectFilePath": "/Users/alpalacios/Desktop/pt/back/RickAndMortyApi/RickAndMortyApi.csproj",
+  "projectFilePath": "/Volumes/HXLAB/BKPMPALEX/pt/back/RickAndMortyApi/RickAndMortyApi.csproj",
   "expectedPackageFiles": [
     "/Users/alpalacios/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/alpalacios/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",

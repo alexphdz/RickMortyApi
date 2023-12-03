@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  # Servicio para la base de datos MySQL
+  mysql:
+    image: mysql:latest
+    command: --authentication_policy-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: "MiPassword123!"
+      MYSQL_DATABASE: "RickMortyDB"
+      MYSQL_USER: "SA"
+      MYSQL_PASSWORD: "MiPassword123!"
+    ports:
+      - "3306:3306"
+    networks:
+      - backend
+
+  # Servicio para tu aplicación .NET
+  tu-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - mysql
+    ports:
+      - "8080:80"
+    environment:
+      ConnectionStrings__DefaultConnection: "Server=mysql;Port=3306;Database=RickMortyDB;User=TuUsuario;Password=MiPassword123!;"
+    networks:
+      - backend
+
+networks:
+  backend:
